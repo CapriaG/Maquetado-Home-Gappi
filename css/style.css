@@ -1,0 +1,423 @@
+body{
+    margin: 0;
+    padding: 0;
+    margin-top: 115px;
+    max-width: 1200px;
+    font-family: 'Noto Sans', sans-serif;
+    color: #858585;
+    background-color: #ffffffce;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* ----------- Header, logo and nav ----------*/
+header{
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 25px solid #80c5bf;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo img{
+    height: 80px;
+    margin-left: 75px;
+}
+
+nav{
+    padding-right: 50px;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+    color: #707070;
+}
+
+nav a:first-child {
+    color: #80c5bf;
+}
+
+nav a:last-child{
+    background-color: #80c5bf;
+    color: #fff;
+    border-radius: 10px;
+    padding: 7px;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    nav{
+        padding: 1px 0 1px 60px;
+        font-size: 15px;
+    }
+    .logo img{
+        padding-right: 50px;
+    }
+}
+
+/* ----------- Div image Gappi ----------*/
+
+.portada img{
+    width: 1200px;
+    max-width: 100%;
+}
+
+/* ----------- Section: Our services ----------*/
+
+.service {
+    text-align: center;
+    overflow: hidden;
+}
+
+.context h2 {
+    color: #80c5bf;
+    font-weight: 900;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.context p {
+    font-weight: 600;
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 70px;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    width: 41%;
+    margin: 10px;
+}
+
+.service-item img {
+    max-width: 100%;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+.service-item p{
+    margin-right: 20px;
+}
+
+button {
+    text-align: center;
+    margin-top: 40px;
+    color: #80c5bf;
+    background-color: #fff;
+    border: 3px solid #80c5bf;
+    border-radius: 18px;
+    cursor: pointer;
+    font-size: large;
+
+}
+
+button i{
+    transform: rotate(45deg);
+}
+
+.btn-view {
+    padding: 7px 40px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+@media(max-width:700px){
+    .service{
+        font-size: 11px;
+    }
+    .context h2{
+        font-size: large;
+    }
+    .context p{
+        padding-bottom: 10px;
+    }
+    .btn-view{
+        margin-top: 10px;
+    }
+}
+/* ----------- div: bridge-container ----------*/
+
+.bridge-container{
+        display: flex;
+        background-color: #80c5bf;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        height: 120px;
+}
+
+.bridge-container img{
+    height: 60px;
+    max-width: 90%;
+}
+
+/* ----------- section: About us ----------*/
+
+.about-us{
+    display: flex;
+    margin-right: 30px;
+}
+
+.about-us img{
+    margin: 50px 80px;
+    width: 450px;
+    height: 440px;
+}
+
+.about-us h2, 
+.about-us h3{
+    color: #80c5bf;
+}
+
+.about-us h2{
+    font-size: 35px;
+    margin-top: 80px;
+    margin-bottom: 1px;
+}
+
+.about-us p{
+    font-size: 13px;
+}
+
+.about-us button{
+    margin: 15px;
+}
+
+@media (max-width:900px){
+    .about-us{
+        flex-direction: column;
+    }
+    .about-us img{
+        width: 70%;
+        height: 50%;
+        margin: 10% 20%;
+    }
+    .about-us h2,
+    .about-us h3{
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    .about-us p{
+        margin-left: 20px;
+    }
+
+    .about-us button{
+        margin-left: 30%;
+    }
+}
+
+/* ----------- Section: contact us ----------*/
+
+.contact-us{
+    display: flex;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #80c5bf;
+}
+
+.contact-container{
+    padding: 100px;
+}
+
+.btn-view-white{
+    padding: 7px 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+    background-color: #80c5bf;
+    border: 3px solid #fff;
+    color: #fff;
+    font-size: 90%;
+}
+
+@media(max-width:900px){
+    .contact-us{
+        flex-direction: column;
+    }
+    
+    .contact-container{
+        padding: 20px;
+    }
+
+    .contact-us img{
+        height: 400px;
+        }
+}
+
+
+/* ----------- Section: information ----------*/
+
+.information {
+    display: flex;
+    background-color: #000;
+    color: #ffffff93;
+    font-size: 80%;
+}
+
+.information p{
+    margin-left: 80px;
+}
+
+.logo-black {
+    flex: 1; 
+    max-width: 40%;
+    padding: 60px 0;
+}
+
+.a-logo{
+    margin-left: 70px;
+}
+
+.table-container {
+    flex: 1;
+    max-width: 45%;
+    padding: 6%;
+    display: flex;
+}
+
+.table-container table {
+    width: 100%;
+}
+
+.logo-black img {
+    max-width: 100%;
+}
+
+.menu{
+    padding-right: 100px;
+}
+
+.menu th{
+    padding-bottom: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ffffff9f;
+    color: #fff;
+}
+
+.contact th{
+    padding-bottom: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ffffff9f;
+    color: #fff;
+}
+
+
+.table-container a{
+    color: #ffffff93;
+}
+
+.table-container i{
+    color: #fff;
+    padding-top: 10px;
+}
+
+@media(max-width:800px){
+    .information{
+        align-items: center;
+
+    }
+    .logo-black{
+        padding: 1px 0;
+        margin-right: 100px;
+    }
+    .information p{
+        display: none;
+    }
+    .table-container{
+        flex-direction: column;
+    }
+}
+
+/* ----------- footer ----------*/
+
+footer{
+    display: flex;
+}
+
+.footer{
+    justify-content: center;
+    background-color: #80c5bf;
+    color: black;
+}
+
+.footer h4{
+    font-size: smaller;
+    font-weight: 600;
+    margin: 8px;
+}
+
+@media(max-width:600px){
+    .footer h4{
+        font-size: 10px;
+    }
+}
+
+/* ----------- transition efects ----------*/
+
+.logo img:hover{
+    height: 85px;
+    transition: height 0.5s ease;
+}
+
+nav a:hover{
+    border-bottom: 1px solid #80c5bf;
+    transition: border-bottom 1s ease;
+}
+
+nav a:hover:last-child{
+    border: 1px solid #000;
+    transition: border 0.5s ease;
+}
+
+.service-item img:hover{
+    transform: scale(1.1);
+}
+
+.btn-view:hover{
+    background-color: #80c5bf;
+    color: #fff;
+    transition: background-color 0.5s ease;
+}
+
+.btn-view-white:hover{
+    background-color: #fff;
+    color: #80c5bf;
+    transition: background-color 0.5s ease;
+}
+
+.logo-black img:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+
+.table-container a:hover{
+    color: #80c5bf;
+    transition: color 0.3s ease;
+}
+
+.table-container i:hover{
+    color: rgb(216, 46, 75);
+    transition: color 0.3s ease;
+}
